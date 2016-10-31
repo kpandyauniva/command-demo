@@ -1,0 +1,70 @@
+- metadata:
+    uid: client-mgmt
+    apiVersion: v1
+    type: Project
+  spec:
+    allowedUsers: null
+    deniedUsers: null
+- metadata:
+    uid: client-care
+    apiVersion: v1
+    type: Project
+  spec:
+    allowedUsers: null
+    deniedUsers: null
+- metadata:
+    uid: build
+    apiVersion: v1
+    type: Project
+  spec:
+    allowedUsers: null
+    deniedUsers: null
+- metadata:
+    uid: test-automation
+    apiVersion: v1
+    type: Project
+  spec:
+    allowedUsers: null
+    deniedUsers: null
+- metadata:
+    uid: smoke-tests
+    apiVersion: v1
+    type: Project
+  spec:
+    allowedUsers: null
+    deniedUsers: null
+- metadata:
+    uid: analytics
+    apiVersion: v1
+    type: Project
+  spec:
+    allowedUsers: null
+    deniedUsers: null
+- metadata:
+    uid: sales
+    apiVersion: v1
+    type: Project
+  spec:
+    allowedUsers: null
+    deniedUsers: null
+- metadata:
+    uid: account
+    apiVersion: v1
+    type: Project
+  spec:
+    allowedUsers: null
+    deniedUsers: null
+- metadata:
+    uid: corp-ui
+    apiVersion: v1
+    type: Project
+  spec:
+    allowedUsers: null
+    deniedUsers: null
+- metadata:
+    uid: etl
+    apiVersion: v1
+    type: Project
+  spec:
+    allowedUsers: null
+    deniedUsers: null

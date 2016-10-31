@@ -1,0 +1,23 @@
+ apiVersion: v1
+ kind: ReplicationController
+ metadata:
+   name: sales-svc
+   namespace: production
+ spec:
+   replicas: 4
+   selector:
+     app: sales-svc
+   template:
+     metadata:
+       labels:
+         app: sales-svc
+       annotations:
+         scheduler.alpha.kubernetes.io/name: navops-command
+     spec:
+       containers:
+       - name: sales
+         image: kubernetes/pause
+         resources: 
+          limits:
+              memory: 500Mi
+              cpu: 300m

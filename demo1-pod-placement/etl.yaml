@@ -1,0 +1,19 @@
+ apiVersion: batch/v1
+ kind: Job
+ metadata:
+   name: etl-job
+   namespace: production
+ spec:
+   template:
+     metadata:
+       annotations:
+         scheduler.alpha.kubernetes.io/name: navops-command
+     spec:
+       containers:
+       - name: etl 
+         image: kubernetes/pause
+         resources: 
+          limits:
+              memory: 10Mi
+              cpu: 50m
+       restartPolicy: Never

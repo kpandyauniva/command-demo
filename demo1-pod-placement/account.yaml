@@ -1,0 +1,23 @@
+ apiVersion: v1
+ kind: ReplicationController
+ metadata:
+   name: account-svc
+   namespace: production
+ spec:
+   replicas: 6
+   selector:
+     app: account-svc
+   template:
+     metadata:
+       labels:
+         app: account-svc
+       annotations:
+         scheduler.alpha.kubernetes.io/name: navops-command
+     spec:
+       containers:
+       - name: account
+         image: kubernetes/pause
+         resources: 
+          requests: 
+              memory: 800Mi
+              cpu: 400m
