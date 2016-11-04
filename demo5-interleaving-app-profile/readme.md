@@ -19,3 +19,4 @@ NK Corporation's IT infrastructure comprises of large number of servers. The app
 9. Show pods are pending
 10. Enable namespace
 11. Show pods running with kubectl get pods --namespace=production
+12. Point out that ratio of corp-ui to sales service instances
