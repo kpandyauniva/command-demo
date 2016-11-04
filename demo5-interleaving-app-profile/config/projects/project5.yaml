@@ -1,0 +1,8 @@
+  metadata:
+    uid: test-automation
+    apiVersion: v1
+    type: Project
+  spec:
+    allowedUsers: null
+    deniedUsers: null
+

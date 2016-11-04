@@ -1,0 +1,14 @@
+  metadata:
+    uid: sales-profile
+    apiVersion: v1
+    type: ApplicationProfile
+  spec:
+    allowedUsers: []
+    deniedUsers: []
+    owners: []
+    preferredLabels: []
+    project:
+      uid: sales
+    requiredLabels:
+    - memory=100Mi
+    reserveResources: false

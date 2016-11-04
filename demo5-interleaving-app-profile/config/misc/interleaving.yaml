@@ -1,0 +1,16 @@
+metadata:
+  uid: Interleaving
+  apiVersion: v1
+  type: Interleaving
+spec:
+  applicationProfiles:
+  - enabled: true
+    rules:
+    - applicationProfile:
+        uid: sales-profile
+      count: 1
+    - applicationProfile:
+        uid: corp-ui-profile
+      count: 5
+  labels:
+  - enabled: false

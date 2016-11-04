@@ -1,0 +1,14 @@
+  metadata:
+    uid: corp-ui-profile
+    apiVersion: v1
+    type: ApplicationProfile
+  spec:
+    allowedUsers: []
+    deniedUsers: []
+    owners: []
+    preferredLabels: []
+    project:
+      uid: corp-ui
+    requiredLabels:
+    - memory=100Mi
+    reserveResources: false

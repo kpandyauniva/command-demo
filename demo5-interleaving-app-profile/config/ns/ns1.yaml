@@ -1,0 +1,20 @@
+  metadata:
+    uid: staging
+    apiVersion: v1
+    type: Namespace
+  spec:
+    acl:
+      allowHostNetworking: false
+      allowPrivilegedContainers: false
+      allowedHosts: null
+      allowedProjects: null
+      allowedUsers: null
+      deniedLabels: null
+      deniedProjects: null
+      deniedUsers: null
+      enabled: false
+    enabled: true
+    quotas:
+      enabled: false
+      items: null
+
