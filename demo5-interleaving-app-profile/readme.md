@@ -17,5 +17,5 @@ NK Corporation's IT infrastructure comprises of large number of servers. The app
 7. Disable namespace
 8. Create Pods - kubectl create -f scenario5.yaml
 9. Show pods are pending
-10.Enable namespace
+10. Enable namespace
 11. Show pods running with kubectl get pods --namespace=production
