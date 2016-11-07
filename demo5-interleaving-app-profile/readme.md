@@ -1,6 +1,6 @@
 
 #### Title of the presenation
-Keepng a ratio of number of interdependent services/applications instances
+Keeping a ratio of number of interdependent services/applications instances
 
 #### Purpose
 Demonstrate interleaving scheduling policy based on application profile.  Presentation duration 6-7 minutue
