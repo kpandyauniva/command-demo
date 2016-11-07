@@ -1,6 +1,6 @@
 
 #### Title of the presenation
-Keeping a ratio of number of interdependent services/applications instances
+Keeping a ratio of number of interdependent services/applications instances in k8s cluster
 
 #### Purpose
 Demonstrate interleaving scheduling policy based on application profile.  Presentation duration 6-7 minutue
