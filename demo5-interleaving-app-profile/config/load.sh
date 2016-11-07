@@ -22,4 +22,4 @@ echo "----creating application profiles"
 ~/navopsctl create -f app-profiles/sales-profile.yaml
 
 echo "--adding interleaving"
-~/navopsctl create -f misc/interleaving.yaml
+~/navopsctl update -f misc/interleaving.yaml
