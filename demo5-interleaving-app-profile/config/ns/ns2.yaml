@@ -27,7 +27,7 @@
         rules:
         - limits:
           - kind: pods
-            value: "40"
+            value: "0"
           targets:
           - aggregate: true
             entities:
