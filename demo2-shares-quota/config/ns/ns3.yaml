@@ -1,0 +1,37 @@
+  metadata:
+    uid: development
+    apiVersion: v1
+    type: Namespace
+  spec:
+    acl:
+      allowHostNetworking: false
+      allowPrivilegedContainers: false
+      allowedHosts: null
+      allowedProjects:
+      - uid: build
+      - uid: test-automation
+      allowedUsers: null
+      deniedLabels: null
+      deniedProjects: null
+      deniedUsers: null
+      enabled: true
+    enabled: true
+    quotas:
+      enabled: true
+      items:
+      - description: ""
+        name: ci-quota
+        rules:
+        - limits:
+          - kind: pods
+            value: "20"
+          - kind: memory
+            value: 2Gi
+          targets:
+          - aggregate: false
+            entities:
+            - kind: Project
+              uid: test-automation
+            - kind: Project
+              uid: build
+

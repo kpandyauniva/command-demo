@@ -1,0 +1,17 @@
+metadata:
+  uid: SharesTree
+  apiVersion: v1
+  type: SharesTree
+spec:
+  pastInfluence: some
+  rootVertex:
+    children:
+    - children: null
+      entity:
+        kind: Project
+        uid: DefaultProject
+      shares: 100
+    entity:
+      kind: Internal
+      uid: ROOT
+    shares: 0

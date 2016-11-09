@@ -1,0 +1,71 @@
+ apiVersion: v1
+ kind: ReplicationController
+ metadata:
+   name: account-svc
+   namespace: production
+ spec:
+   replicas: 10
+   selector:
+     app: account-svc
+   template:
+     metadata:
+       labels:
+         app: account-svc
+         navops.io/project: account
+       annotations:
+         scheduler.alpha.kubernetes.io/name: navops-command
+     spec:
+       containers:
+       - name: account
+         image: kubernetes/pause
+         resources: 
+          requests: 
+              memory: 100Mi
+-----
+ apiVersion: v1
+ kind: ReplicationController
+ metadata:
+   name: client-management-svc
+   namespace: production
+ spec:
+   replicas: 10
+   selector:
+     app: client-management-svc
+   template:
+     metadata:
+       labels:
+         app: client-management-svc
+         navops.io/project: client-mgmt
+       annotations:
+         scheduler.alpha.kubernetes.io/name: navops-command
+     spec:
+       containers:
+       - name: client-management
+         image: kubernetes/pause
+         resources: 
+          limits: 
+              memory: 100Mi
+-----
+ apiVersion: v1
+ kind: ReplicationController
+ metadata:
+   name: corp-ui
+   namespace: production
+ spec:
+   replicas: 30
+   selector:
+     app: corp-ui
+   template:
+     metadata:
+       labels:
+         app: corp-ui
+         navops.io/project: corp-ui
+       annotations:
+         scheduler.alpha.kubernetes.io/name: navops-command
+     spec:
+       containers:
+       - name: corp-ui
+         image: kubernetes/pause
+         resources: 
+          limits:
+              memory: 100Mi

@@ -1,0 +1,8 @@
+  metadata:
+    uid: client-care-ui
+    apiVersion: v1
+    type: Project
+  spec:
+    allowedUsers: null
+    deniedUsers: null
+

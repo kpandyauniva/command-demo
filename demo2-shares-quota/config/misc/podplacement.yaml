@@ -1,0 +1,9 @@
+metadata:
+  uid: PodPlacement
+  apiVersion: v1
+  type: PodPlacement
+spec:
+  mixPolicy:
+    packEntities: null
+    spreadEntities: null
+  mode: maximize
